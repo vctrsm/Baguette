@@ -1,8 +1,8 @@
 {
   "name": "baguette",
   "version": "1.0.0",
-  "description": "Yet another multipurpose Discord bot.",
-  "main": "index.js",
+  "description": "Yet another multipurpose Discord bot",
+  "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,9 +10,6 @@
     "type": "git",
     "url": "git+https://github.com/vctrsm/Baguette.git"
   },
-  "keywords": [
-    "discord-bot"
-  ],
   "author": "vctrsm_",
   "license": "MIT",
   "bugs": {
