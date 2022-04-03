@@ -1,2 +1,2 @@
 # Baguette
-#Yet another multipurpose Discord bot.
+Yet another multipurpose Discord bot.
