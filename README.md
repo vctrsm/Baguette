@@ -8,10 +8,9 @@ soon feature everything for all your Discord server needs.
 
 #### Done:
 
-💤 - Nothing here yet!
+✅ - Beautiful help command
 
 #### In progress (⌨ = Currently writing, ⌛ = On queue):
-⌨ - Beautiful help command
 
 ⌨ - Moderation commands
 
