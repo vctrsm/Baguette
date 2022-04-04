@@ -12,6 +12,8 @@ export default {
 
     guildOnly: true,
 
+    ephemeral: true,
+
     minArgs: 2,
     expectedArgs: '<user> <reason>',
     expectedArgsTypes: ['USER', 'STRING'],

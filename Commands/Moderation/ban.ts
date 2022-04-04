@@ -1,38 +1,44 @@
-import { Message, MessageActionRow, MessageButton } from "discord.js";
+import { GuildMember } from "discord.js";
 import { ICommand } from "wokcommands";
 
 export default {
     category: 'Moderation',
     description: 'Bans a mentioned user.',
 
-    slash: "both",
+    permissions: ['BAN_MEMBERS'],
+
+    slash: 'both',
     testOnly: true,
-    permissions: ["BAN_MEMBERS"],
-  
-    callback: async ({ interaction: msgInt, channel }) => {
-        const row = new MessageActionRow()
-        .addComponents(
-            new MessageButton()
-            .setCustomId('ban_yes')
-            .setEmoji('🔨')
-            .setLabel('Confirm')
-            .setStyle('SUCCESS')
-        )
-        .addComponents(
-            new MessageButton()
-            .setCustomId('ban_no')
-            .setEmoji('✖')
-            .setLabel('Cancel')
-            .setStyle('DANGER')
 
-        )
+    guildOnly: true,
 
-        const linkRow = new MessageActionRow()
-        
-        await msgInt.reply({
-            content: 'Are you sure you want to ban this user?',
-            components: [row],
-            ephemeral: true,
+    ephemeral: true,
+
+    minArgs: 2,
+    expectedArgs: '<user> <reason>',
+    expectedArgsTypes: ['USER', 'STRING'],
+
+    callback: ({ message, interaction, args }) => {
+        const target = message ? message.mentions.members?.first() : interaction.options.getMember('user') as GuildMember
+        if (!target) {
+            return '✖ Please mention a user to ban!'
+        }
+
+        if (!target.kickable) {
+            return {
+                custom: true,
+                content: '✖ I cannot ban that user!'
+            }
+        }
+
+        args.shift()
+        const reason = args.join(' ')
+
+        target.ban({
+            reason,
+            days: 7
         })
+
+        return '✅ User successfully banned!'
     }
 } as ICommand
