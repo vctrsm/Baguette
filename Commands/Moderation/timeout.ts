@@ -5,6 +5,7 @@ export default {
     description: 'Times out a mentioned user.',
 
     permissions:['ADMINISTRATOR'],
+    ephemeral: true,
 
     slash: 'both',
     testOnly: true,

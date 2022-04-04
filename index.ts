@@ -16,12 +16,12 @@ client.on('ready', () => {
         typeScript: true,
         testServers: ['960247766343385088'],
         botOwners: ['767429982732681238'],
-        
         mongoUri: process.env.MONGO_URI,
         dbOptions: {
             keepAlive: true
         },
       })
+      .setDefaultPrefix('.')
 })
 
 client.login(process.env.TOKEN)
