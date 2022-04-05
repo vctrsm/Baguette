@@ -2,7 +2,7 @@ import { MessageEmbed } from "discord.js";
 import { ICommand } from "@vctrsm/breadhandler";
 
 export default {
-  category: "Testing",
+  category: "Base code",
   description: "Sends an embed",
 
   slash: "both",

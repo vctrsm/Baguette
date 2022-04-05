@@ -8,8 +8,8 @@ import {
 import { ICommand } from "@vctrsm/breadhandler";
 
 export default {
-  category: "Testing",
-  description: "Testing",
+  category: "Base code",
+  description: "Buttons base code",
 
   slash: true,
   testOnly: true,
