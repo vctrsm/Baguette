@@ -8,7 +8,7 @@ soon feature everything for all your Discord server needs.
 
 #### Done:
 
-💤 - Nothing here yet
+✅ - **NEW!** Own command handler!
 
 #### In progress (⌨ = Currently writing, ⌛ = On queue):
 
