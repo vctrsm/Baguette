@@ -26,13 +26,68 @@ soon feature everything for all your Discord server needs.
 
 ⌛ - Music system
 
-## 🎛 - Self-Hosting
+## 🎛 - Self-Hosting (Requires node.js v14 or higher)
 
 In order to self-host, you need to read the LICENSE file, but if you're too lazy, it basically says:
 
 Credit me in order to use this project, or else, it'll be taken down :)
 
-No self-hosting guide yet!
+Follow the steps below:
+
+### Step 1 - Download this code or clone the repo
+
+You can download the code with the "Code" button. Save as zip.
+
+#### OR
+
+```sh
+git clone https://github.com/vctrsm/Baguette.git
+```
+
+### Step 2 - Open a command prompt IN THE ROOT DIRECTORY, NOT IN ./src
+
+Open a command prompt in the root directory. Simple.
+
+### Step 3 - Install dependencies
+
+To install all dependencies, run:
+
+```sh
+npm install
+```
+If you get any errors, run your command prompt as administrator.
+
+### Step 4 - Rename example.config.json to config.json
+
+You'll need:
+
+Your bot's token from Discord dev portal
+A MongoDB connection URI
+
+The config file looks like this:
+
+```sh
+{
+  "token": "Super Secret Token Here",
+  "mongoUri": "Mongo Connection URI Here"
+}
+
+```
+Fill in the details respectively.
+
+## Step 5 - Ways to run the bot
+
+If you just want to run the project as-is, open a command prompt and run this command:
+
+```sh
+npm start
+```
+If you're constantly making changes to the code, run the bot with:
+
+```sh
+npm run dev
+```
+### NOTE: If this is your case, I recommend you to read the contribution guide, **it means a lot!**
 
 ## 💻 - Contributing
 
@@ -56,7 +111,7 @@ Change into that project directory (Baguette):
 ```sh
 $ cd Baguette-master
 ```
-Add a connection to the original owner’s repository.
+Add a connection to the my repository.
 
 ```sh
 $ git remote add myfriend git://github.com/vctrsm/Baguette
