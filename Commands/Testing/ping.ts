@@ -1,13 +1,13 @@
-import { ICommand } from "wokcommands";
+import { ICommand } from "@vctrsm/breadhandler";
 
 export default {
-    category: 'Testing',
-    description: 'Replies with pong.',
+  category: "Testing",
+  description: "Replies with pong.",
 
-    slash: 'both',
-    testOnly: true,
+  slash: "both",
+  testOnly: true,
 
-    callback: ({ message, interaction }) => {
-        return 'Pong'
-    }
-} as ICommand
+  callback: ({ message, interaction }) => {
+    return "Pong";
+  },
+} as ICommand;

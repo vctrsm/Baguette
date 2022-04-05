@@ -1,18 +1,16 @@
 import { MessageEmbed } from "discord.js";
-import { ICommand } from "wokcommands";
+import { ICommand } from "@vctrsm/breadhandler";
 
 export default {
-    category: 'Testing',
-    description: 'Sends an embed',
-    
+  category: "Testing",
+  description: "Sends an embed",
 
-    slash: "both",
-    testOnly: true, 
+  slash: "both",
+  testOnly: true,
 
-    callback: ({ message, text }) => {
-        const embed = new MessageEmbed()
-          .setDescription("Hello world")
+  callback: ({ message, text }) => {
+    const embed = new MessageEmbed().setDescription("Hello world");
 
-        return embed
-    }
-} as ICommand
+    return embed;
+  },
+} as ICommand;

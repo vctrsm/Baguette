@@ -1,12 +1,12 @@
-import { ICommand } from "wokcommands";
+import { ICommand } from "@vctrsm/breadhandler";
 
 export default {
-    category: 'Moderation',
-    description: 'Times out a mentioned user.',
+  category: "Moderation",
+  description: "Times out a mentioned user.",
 
-    permissions:['ADMINISTRATOR'],
-    ephemeral: true,
+  permissions: ["MODERATE_MEMBERS"],
+  ephemeral: true,
 
-    slash: 'both',
-    testOnly: true,
-} as ICommand
+  slash: "both",
+  testOnly: true,
+} as ICommand;
