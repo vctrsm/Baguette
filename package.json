@@ -2,11 +2,11 @@
   "name": "baguette",
   "version": "1.0.0",
   "description": "Yet another multipurpose Discord bot",
-  "main": "index.ts",
+  "main": "src/index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.ts",
-    "start": "ts-node index.ts"
+    "dev": "nodemon src/index.ts",
+    "start": "ts-node src/index.ts"
   },
   "repository": {
     "type": "git",
@@ -21,8 +21,6 @@
   "dependencies": {
     "@vctrsm/breadhandler": "github:vctrsm/BreadHandler",
     "discord.js": "^13.6.0",
-    "dotenv": "^16.0.0",
-    "mongoose": "^6.2.9",
     "nodemon": "^2.0.15"
   }
 }

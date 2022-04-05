@@ -11,7 +11,9 @@ const embeds: MessageEmbed[] = [];
 const pages = {} as { [key: string]: number };
 
 for (let a = 0; a < 4; ++a) {
-  embeds.push(new MessageEmbed().setDescription(`Page ${a + 1}`));
+  embeds.push(
+    new MessageEmbed().setTitle("testing").setDescription(`Page ${a + 1}`)
+  );
 }
 
 const getRow = (id: string) => {
@@ -71,6 +73,36 @@ export default {
     collector.on("collect", (btnInt) => {
       if (!btnInt) {
         return;
+      }
+
+      btnInt.deferUpdate();
+
+      if (
+        btnInt.customId !== "prev_embed" &&
+        btnInt.customId !== "next_embed"
+      ) {
+        return;
+      }
+
+      if (btnInt.customId === "prev_embed" && pages[id] > 0) {
+        --pages[id];
+      } else if (
+        btnInt.customId === "next_embed" &&
+        pages[id] < embeds.length - 1
+      ) {
+        ++pages[id];
+      }
+
+      if (reply) {
+        reply.edit({
+          embeds: [embeds[pages[id]]],
+          components: [getRow(id)],
+        });
+      } else {
+        interaction.editReply({
+          embeds: [embeds[pages[id]]],
+          components: [getRow(id)],
+        });
       }
     });
   },

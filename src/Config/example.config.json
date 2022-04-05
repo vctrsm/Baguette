@@ -1,0 +1,4 @@
+{
+  "token": "Super Secret Token Here",
+  "mongoUri": "Mongo Connection URI Here"
+}
