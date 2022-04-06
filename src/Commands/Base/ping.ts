@@ -1,7 +1,7 @@
 import { ICommand } from "@vctrsm/breadhandler";
 
 export default {
-  category: "Base code.",
+  category: "Base code",
   description: "Replies with pong.",
 
   slash: "both",

@@ -12,6 +12,7 @@ client.on("ready", async () => {
 
   new BreadHandler(client, {
     commandsDir: path.join(__dirname, "Commands"),
+    featuresDir: path.join(__dirname, "Features"),
     typeScript: true,
     testServers: ["960247766343385088"],
     botOwners: ["767429982732681238"],

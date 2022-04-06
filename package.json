@@ -1,6 +1,6 @@
 {
   "name": "baguette",
-  "version": "1.0.0",
+  "version": "v0.1.0-beta",
   "description": "Yet another multipurpose Discord bot",
   "main": "src/index.ts",
   "scripts": {
@@ -21,6 +21,7 @@
   "dependencies": {
     "@vctrsm/breadhandler": "github:vctrsm/BreadHandler",
     "discord.js": "^13.6.0",
+    "mongoose": "^6.2.10",
     "nodemon": "^2.0.15"
   }
 }
