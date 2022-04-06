@@ -8,6 +8,14 @@ soon feature everything for all your Discord server needs.
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/J3J1BZU1Q)
 
+## 🌟✨ - Star the repo - It means a lot too!
+
+Starring the repo helps us place our repo over the others!
+
+## 👥 - Join the Discord - It helps us grow!
+
+[![Support Server](https://invidget.switchblade.xyz/4qhGBpXHjD)](https://discord.gg/4qhGBpXHjD)
+
 ## 🗺 - Baguette's roadmap
 
 #### Done:
