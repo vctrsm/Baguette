@@ -4,6 +4,10 @@
 Baguette is another multiputpose Discord bot, which will 
 soon feature everything for all your Discord server needs.
 
+## ☕ - Buy me a cofee - Means A LOT to me!
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/J3J1BZU1Q)
+
 ## 🗺 - Baguette's roadmap
 
 #### Done:
