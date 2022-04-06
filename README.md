@@ -4,6 +4,10 @@
 Baguette is another multiputpose Discord bot, which will 
 soon feature everything for all your Discord server needs.
 
+## ☕ - Buy me a cofee - Means A LOT to me!
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/J3J1BZU1Q)
+
 ## 🗺 - Baguette's roadmap
 
 #### Done:
@@ -111,14 +115,14 @@ Change into that project directory (Baguette):
 ```sh
 $ cd Baguette-master
 ```
-Add a connection to the my repository.
+Add a connection to my repository.
 
 ```sh
-$ git remote add myfriend git://github.com/vctrsm/Baguette
+$ git remote add vctrsm git://github.com/vctrsm/Baguette
 ```
 Note the distinction between git@github.com: in the first case and git://github.com/ in the second case. The former is for the case that you have write access to the repository, whereas the latter is what to do when you only want read access.
 ```sh
-$ git remote add repo_nickname git://github.com/myfriend/the_repo
+$ git remote add repo_nickname git://github.com/vctrsm/Baguette
 ```
 To check this remote add set up:
 ```sh
