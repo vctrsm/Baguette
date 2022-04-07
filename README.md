@@ -67,7 +67,6 @@ To install all dependencies, run:
 ```sh
 npm install
 ```
-If you get any errors, run your command prompt as administrator.
 
 ### Step 4 - Rename example.config.json to config.json
 
