@@ -74,6 +74,7 @@ If you get any errors, run your command prompt as administrator.
 You'll need:
 
 Your bot's token from Discord dev portal
+
 A MongoDB connection URI
 
 The config file looks like this:
