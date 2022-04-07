@@ -1,11 +1,10 @@
 //Simple greet command. If you're here to contribute, go to ../Base/welcome.ts
 //Another required resource for this to work is a MongoDB schema, so make sure to add a connection URI in config.json
 //The schema is at ../Models/welcome-schema
-import DJS, { Channel } from "discord.js";
-import { ICommand } from "@vctrsm/breadhandler";
-import welcomeSchema from "../../Models/welcome-schema";
+const DJS = require("discord.js");
+const welcomeSchema = require("../../Models/welcome-schema");
 
-export default {
+module.exports = {
   category: "Configuration",
   description: "Sets the welcome channel.",
 
@@ -66,4 +65,4 @@ export default {
 
     return "Welcome channel set!";
   },
-} as ICommand;
+};

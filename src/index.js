@@ -1,9 +1,9 @@
-import DiscordJS, { Intents } from "discord.js";
-import BreadHandler from "@vctrsm/breadhandler";
-import path from "path";
+const DJS = require("discord.js");
+const BreadHandler = require("@vctrsm/breadhandler");
+const path = require("path");
 const config = require("./Config/config.json");
 
-const client = new DiscordJS.Client({
+const client = new DJS.Client({
   intents: [98303],
 });
 
@@ -13,7 +13,6 @@ client.on("ready", async () => {
   new BreadHandler(client, {
     commandsDir: path.join(__dirname, "Commands"),
     featuresDir: path.join(__dirname, "Features"),
-    typeScript: true,
     testServers: ["960247766343385088"],
     botOwners: ["767429982732681238"],
     mongoUri: config.mongoUri,
